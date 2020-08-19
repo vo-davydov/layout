@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Davydoff</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="body-main">
+    <div class="container ">
+        <!-- Шапка сайта -->
+        <div class="top">
+            <ul class="header-menu">
+                <li class="index-menu"><a href="index.html">Main</a></li>
+                <li class="contacts-menu"><a href="contacts.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="header-contact-us">
+            <h2 class="header-contact-us">Contact Us</h2>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="contacts-info-container">
+            <div class="contacts-info">
+                <img src="img/hackerman.png" width="350" height="250" alt="photo">
+                <h4 class="header-mini">Address</h4>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4 class="header-mini">Phone</h4>
+                <ul>
+                    <li>First number</li>
+                    <li>Second number</li>
+                </ul>
+                <h4 class="header-mini">Online service</h4>
+                <ul>
+                    <li><a href="https://www.google.com/" target="_blank">google</a></li>
+                    <li><a href="mailto:mail@mail.ru">mail</a></li>
+                </ul>
+            </div>
+
+            <div class="send-message">
+                <h4 class="header-mini">Send us message</h4>
+                <div id="fullName">Full Name <input class="input-textarea" type="text"
+                        placeholder="Ivanov Ivan Ivanovich">
+                </div>
+                <div id="email">Email <input class="input-textarea" type="email" placeholder="mail@mail.ru"></div>
+
+                <div id="message">Message
+                    <br><textarea class="input-textarea"></textarea>
+                </div>
+
+                <button class="btn-submit" type="submit">submit</button>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="map-container">
+            <div class="map">
+                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                    <script>
+                        (function () {
+                            var setting = {
+                                "height": 540,
+                                "zoom": 15,
+                                "queryString": "Красная Площадь, Красная площадь, Москва, Россия",
+                                "place_id": "ChIJGaSPc1pKtUYRHzFSa1B9NHw",
+                                "satellite": false,
+                                "centerCoord": [55.7511916286955, 37.618157227596384],
+                                "cid": "0x7c347d506b52311f",
+                                "lang": "ru",
+                                "cityUrl": "/russia/moscow",
+                                "cityAnchorText": "Карта [CITY1], Central Federal District, Россия",
+                                "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                                "embed_id": "247008"
+                            };
+                            var d = document;
+                            var s = d.createElement('script');
+                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=247008';
+                            s.async = true;
+                            s.onload = function (e) {
+                                window.OneMap.initMap(setting)
+                            };
+                            var to = d.getElementsByTagName('script')[0];
+                            to.parentNode.insertBefore(s, to);
+                        })();
+                    </script><a href="https://1map.com/ru/map-embed">1 Map</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Подвал сайта -->
+        <div class="footer container">
+            <div class="footer__top">
+                <h3 class="footer-top-header">Topic</h3>
+                <p class="footer-top-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+            </div>
+
+            <hr>
+            <div class="footer__bottom">
+
+                <ul class="footer-contacts">
+                    <li class="footer-contacts-address">Lorem ipsum dolor sit amet consectetur</li>
+                    <li class="footer-contacts-phone">+1-541-754-3010</li>
+                    <li class="footer-contacts-email">email@example.com</li>
+                </ul>
+
+                <div class="footer-rights">
+                    <p class="text">
+                        &copy; Все права защищены
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
