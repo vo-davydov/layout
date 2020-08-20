@@ -8,115 +8,191 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 
-<body class="body-main">
-    <div class="container ">
-        <!-- Шапка сайта -->
-        <div class="top">
-            <ul class="header-menu">
-                <li class="index-menu"><a href="index.html">Main</a></li>
-                <li class="contacts-menu"><a href="contacts.html">Contact Us</a></li>
-            </ul>
-        </div>
+<body>
 
-        <div class="header-contact-us">
-            <h2 class="header-contact-us">Contact Us</h2>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-
-        <div class="contacts-info-container">
-            <div class="contacts-info">
-                <img src="img/hackerman.png" width="350" height="250" alt="photo">
-                <h4 class="header-mini">Address</h4>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <h4 class="header-mini">Phone</h4>
-                <ul>
-                    <li>First number</li>
-                    <li>Second number</li>
-                </ul>
-                <h4 class="header-mini">Online service</h4>
-                <ul>
-                    <li><a href="https://www.google.com/" target="_blank">google</a></li>
-                    <li><a href="mailto:mail@mail.ru">mail</a></li>
-                </ul>
+    <div class="wrapper">
+        <div class="top-content-box">
+            <!-- Шапка сайта -->
+            <div class="top-contacts">
+                <div class="container top__box">
+                    <ul class="header-menu">
+                        <li class="index-menu"><a href="index.html"><img src="img/logo.svg" alt="logo"></a></li>
+                        <li class="contacts-menu"><a href="contacts.html"><img src="img/contacts.svg"
+                                    alt="contacts"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="send-message">
-                <h4 class="header-mini">Send us message</h4>
-                <div id="fullName">Full Name <input class="input-textarea" type="text"
-                        placeholder="Ivanov Ivan Ivanovich">
+            <div class="top-header-contact-us">
+                <div class="header-contact-us">
+                    <h2 class="header-contact-us-text">Contact Us</h2>
+                    <div class="contacts-text-main-box">
+                        <p class="contacts-text-main text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                            do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
                 </div>
-                <div id="email">Email <input class="input-textarea" type="email" placeholder="mail@mail.ru"></div>
-
-                <div id="message">Message
-                    <br><textarea class="input-textarea"></textarea>
-                </div>
-
-                <button class="btn-submit" type="submit">submit</button>
             </div>
-        </div>
 
-        <br>
+            <div class="contact-main-box container">
+                <div class="contacts-info-container">
+                    <div class="contacts-info">
 
-        <div class="map-container">
-            <div class="map">
-                <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
-                    <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
-                    <script>
-                        (function () {
-                            var setting = {
-                                "height": 540,
-                                "zoom": 15,
-                                "queryString": "Красная Площадь, Красная площадь, Москва, Россия",
-                                "place_id": "ChIJGaSPc1pKtUYRHzFSa1B9NHw",
-                                "satellite": false,
-                                "centerCoord": [55.7511916286955, 37.618157227596384],
-                                "cid": "0x7c347d506b52311f",
-                                "lang": "ru",
-                                "cityUrl": "/russia/moscow",
-                                "cityAnchorText": "Карта [CITY1], Central Federal District, Россия",
-                                "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
-                                "embed_id": "247008"
-                            };
-                            var d = document;
-                            var s = d.createElement('script');
-                            s.src = 'https://1map.com/js/script-for-user.js?embed_id=247008';
-                            s.async = true;
-                            s.onload = function (e) {
-                                window.OneMap.initMap(setting)
-                            };
-                            var to = d.getElementsByTagName('script')[0];
-                            to.parentNode.insertBefore(s, to);
-                        })();
-                    </script><a href="https://1map.com/ru/map-embed">1 Map</a>
+                        <img class="hackerman" src="img/hackerman.png" alt="photo">
+
+                        <div class="address-box-header">
+                            <h4 class="header-mini">ADDRESS</h4>
+                            <div class="address-box-header-text">
+                                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+
+                        <div class="phone-box-header">
+                            <h4 class="header-mini">PHONE</h4>
+                            <ul class="ul-phones">
+                                <li class="text text-phone-ul">+7-812-7313-4321</li>
+                                <li class="text text-phone-ul">+7-817-0000-1234</li>
+                            </ul>
+                        </div>
+
+                        <div class="online-box-header">
+                            <h4 class="header-mini">ONLINE SERVICE</h4>
+                            <ul class="ul-link-site">
+                                <li class="text-link-site-ul"><a class="text text-link text-link-site"
+                                        href="www.site.com" target="_blank">www.site.com</a></li>
+                            </ul>
+                            <ul class="ul-link-email">
+                                <li class="text-link-email-ul"><a class="text text-link text-link-email"
+                                        href="mailto:hello.site@gmail.com">hello.site@gmail.com</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="send-message">
+
+                        <div class="contacts-input-info-box">
+                            <div class="send-us-message-box">
+                                <h4 class="header-mini">Send us message</h4>
+                            </div>
+
+                            <div class="contacts-info-head-name">
+                                <div class="fullName text ">Full Name</div>
+                            </div>
+
+                            <input class="input-textarea input-textarea-mini" type="text-name" placeholder="Your Name">
+
+
+                            <div class="email text contacts-info-head-email">Email</div>
+
+                            <input class="input-textarea input-textarea-mini" type="email" placeholder="Your Email">
+
+                            <div class="message text contacts-info-head-message">Message</div>
+
+
+                            <textarea class="input-textarea input-textarea-large" type="text"
+                                placeholder="Your Message"></textarea>
+
+                            <div class="btn-submit-box-container">
+                                <div class="btn-submit-box">
+                                    <button class="btn-submit" type="submit">submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="map-container">
+                    <div class="map">
+                        <div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                            <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div>
+                            <script>
+                                (function () {
+                                    var setting = {
+                                        "height": 540,
+                                        "zoom": 15,
+                                        "queryString": "Красная Площадь, Красная площадь, Москва, Россия",
+                                        "place_id": "ChIJGaSPc1pKtUYRHzFSa1B9NHw",
+                                        "satellite": false,
+                                        "centerCoord": [55.7511916286955, 37.618157227596384],
+                                        "cid": "0x7c347d506b52311f",
+                                        "lang": "ru",
+                                        "cityUrl": "/russia/moscow",
+                                        "cityAnchorText": "Карта [CITY1], Central Federal District, Россия",
+                                        "id": "map-9cd199b9cc5410cd3b1ad21cab2e54d3",
+                                        "embed_id": "247008"
+                                    };
+                                    var d = document;
+                                    var s = d.createElement('script');
+                                    s.src = 'https://1map.com/js/script-for-user.js?embed_id=247008';
+                                    s.async = true;
+                                    s.onload = function (e) {
+                                        window.OneMap.initMap(setting)
+                                    };
+                                    var to = d.getElementsByTagName('script')[0];
+                                    to.parentNode.insertBefore(s, to);
+                                })();
+                            </script><a href="https://1map.com/ru/map-embed">1 Map</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- Подвал сайта -->
-        <div class="footer container">
-            <div class="footer__top">
-                <h3 class="footer-top-header">Topic</h3>
-                <p class="footer-top-text">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                </p>
+        <div class="footer-content-box">
+            <div class="footer">
+                <div class="container footer-box">
+                    <div class="footer__top">
+                        <div class="footer__content-box">
+                            <h3 class="footer-top-header">Intersted to woek with our team?</h3>
+                            <p class="text footer-top-text">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                                incididunt
+                                ut
+                                labore
+                                et dolore magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="footer__button-box">
+                        <a href="#" class="footer-button">Let’s Talk</a>
+                    </div>
+                </div>
             </div>
 
-            <hr>
+            <hr class="hr-line">
+
             <div class="footer__bottom">
+                <div class="container container-bottom">
+                    <div class="container-bottom-box">
+                        <div class="footer-contacts-rights">
+                            <ul class="footer-contacts">
+                                <li type="A" class="footer__list footer-contacts-address">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur
+                                    adipisicing
+                                    elit.</li>
+                                <li type="A" class="footer__list footer-contacts-phone">+7-812-7313-4321</li>
+                                <li type="A" class="footer__list footer-contacts-email">hello.site@gmail.com</li>
+                            </ul>
 
-                <ul class="footer-contacts">
-                    <li class="footer-contacts-address">Lorem ipsum dolor sit amet consectetur</li>
-                    <li class="footer-contacts-phone">+1-541-754-3010</li>
-                    <li class="footer-contacts-email">email@example.com</li>
-                </ul>
-
-                <div class="footer-rights">
-                    <p class="text">
-                        &copy; Все права защищены
-                    </p>
+                            <div class="footer-rights">
+                                <p class="text footer__copy-text">
+                                    &copy; 2020 All rights reserved.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
 </body>
 

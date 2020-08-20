@@ -40,10 +40,13 @@
 }
 
 .header-mini {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    letter-spacing: 0.04em;
     color: #1F3F68;
-    letter-spacing: 0.05em;
     margin-bottom: 14px;
 }
 
@@ -453,6 +456,9 @@
         min-height: 376px;
         padding-bottom: 41px;
         box-sizing: border-box;
+        padding-left: 32px;
+        padding-right: 32px;
+        width: auto;
     }
 
     .header-main {
@@ -473,6 +479,13 @@
         flex-direction: column;
         align-items: center;
         background-image: none;
+    }
+
+    .what-we-do {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .top__button {
@@ -513,6 +526,63 @@
         margin-right: 0;
         margin-bottom: 16px;
     }
+
+    .footer {
+        justify-content: center;
+        flex-direction: column;
+        height: 310px;
+        width: auto;
+    }
+
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+        margin-top: 18px;
+    }
+
+    .footer-content-box {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .footer__top {
+        margin-top: 0;
+        width: 336px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-top-header {
+        text-align: center;
+    }
+
+    .footer-top-text {
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+
+    .container {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    .footer-button {
+        font-size: 16px;
+        line-height: 26px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.04em;
+
+    }
+
+    .footer__bottom {}
+
+    .footer-contacts {
+        margin-top: 32px;
+    }
 }
 
 .wrapper {
@@ -526,3 +596,253 @@
 }
 
 .footer-content-box {}
+
+.header-contact-us {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.top-header-contact-us {
+    max-height: 350px;
+    display: flex;
+}
+
+.top-header-contact-us {
+    display: block;
+    Justify-content: center;
+}
+
+.header-contact-us {
+    background-image: url(/img/contacts_header.svg);
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    Justify-content: center;
+    padding-bottom: 60px;
+    background-size: 100%;
+}
+
+.contacts-text-main {
+    display: flex;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    max-width: 780px;
+}
+
+.contacts-text-main-box {
+    display: flex;
+    Justify-content: center;
+}
+
+.contacts-text-main-box {
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.contacts-info-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+}
+
+.contacts-info {
+    width: 359px;
+    padding: 44px 32px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.contact-main-box {
+    display: block;
+    Justify-content: center;
+    position: relative;
+}
+
+.hackerman {
+    max-width: 310px;
+
+}
+
+.send-message {
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+}
+
+.send-us-message-box {
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+}
+
+.contacts-input-info-box {
+    padding-top: 56px;
+    padding-left: 56px;
+    display: flex;
+    Justify-content: space-between;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.fullName {}
+
+.input-textarea-mini {
+    width: 428px;
+    height: 72px;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+
+.input-textarea-large {
+    width: 428px;
+    height: 144px;
+    opacity: 0.4;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.2;
+}
+
+input::placeholder {
+    padding-left: 36px;
+}
+
+textarea::placeholder {
+    padding-left: 36px;
+    padding-top: 21px;
+}
+
+.btn-submit-box {
+    width: 428px;
+    height: 72px;
+    background: #5A98D0;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.btn-submit {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    flex-grow: 1;
+    border: 0;
+}
+
+.contacts-info-head-name {
+    padding-top: 48px;
+    padding-bottom: 8px;
+
+}
+
+.contacts-info-head-email {
+    padding-top: 32px;
+    padding-bottom: 8px;
+
+}
+
+.btn-submit-box-container {
+    padding-top: 72px;
+    padding-bottom: 56px;
+}
+
+
+.contacts-info-head-message {
+    padding-top: 32px;
+    padding-bottom: 8px;
+}
+
+.text-link {
+    text-decoration: none;
+}
+
+.ul-link-email {
+    padding-left: 24px;
+    list-style-image: url('/img/email.svg');
+}
+
+.ul-link-site {
+    padding-left: 24px;
+    list-style-image: url('/img/world.svg');
+}
+
+.ul-phones {
+    padding-top: 24px;
+    padding-left: 24px;
+    text-decoration: none;
+    list-style-image: url('/img/phone.svg');
+}
+
+.address-box-header {
+    padding-top: 56px;
+    flex-grow: 1;
+}
+
+.phone-box-header {
+    flex-grow: 1;
+}
+
+.online-box-header {
+    flex-grow: 1;
+}
+
+.address-box-header-text {
+    padding-top: 24px;
+}
+
+.text-phone-ul {
+    padding-left: 15px;
+}
+
+.text-link-site-ul {
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
+
+.text-link-email-ul {
+    padding-left: 15px;
+    padding-bottom: 5px;
+}
